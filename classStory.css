@@ -1,0 +1,14 @@
+.teacher img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.class {
+    display: flex;
+    margin-bottom: 50px;
+}
+.card {
+    border: none;
+    margin-right: 10px;
+}
