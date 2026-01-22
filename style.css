@@ -1,18 +1,52 @@
 .main-body-section {
-  background-color: #dfffee; 
+  background-color: #dfffee;
   padding-bottom: 80px;
 }
-.carousel-item img {
-  width: 100%;       
-  height: auto;      
-  max-height: 800px; 
-  object-fit: contain; 
-  border-radius: 0 0 50px 50px; 
+
+.top-menu {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo-area h5 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.top-menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu-right a:hover {
+  color: #f8a609 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-custom {
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.nav-link-custom:hover {
+  opacity: 0.8;
+  text-decoration: underline !important;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  object-fit: contain;
+  border-radius: 0 0 50px 50px;
+}
 
 .quick-menu-section {
-  margin-top: 10px; 
+  margin-top: 10px;
   margin-bottom: 10px;
   position: relative;
   z-index: 10;
@@ -25,7 +59,7 @@
   color: white !important;
   border-radius: 50%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -39,7 +73,7 @@
   width: 45px;
   height: auto;
   margin-bottom: 10px;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .quick-btn-full:hover {
@@ -64,15 +98,21 @@
   margin-bottom: 20px;
 }
 
-.news-list { list-style: none; padding: 0; }
+.news-list {
+  list-style: none;
+  padding: 0;
+}
 .news-list li {
   padding: 10px 0;
   font-size: 0.95rem;
   border-bottom: 1px dashed white;
   display: flex;
 }
-.news-list li span { color: #999; margin-right: 15px; font-size: 0.85rem; }
-
+.news-list li span {
+  color: #999;
+  margin-right: 15px;
+  font-size: 0.85rem;
+}
 
 .btn-class-logo {
   text-decoration: none;
@@ -85,15 +125,25 @@
 
 .logo-emoji {
   font-size: 3rem;
-  width: 50px; height: 50px;
-  display: flex; align-items: center; justify-content: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.sunflower:hover { border-color: #ffc107; background-color: #fffbeb; }
-.rose:hover { border-color: #dc3545; background-color: #fff5f5; }
-.hibiscus:hover { border-color: #0d6efd; background-color: #f0f7ff; }
-
+.sunflower:hover {
+  border-color: #ffc107;
+  background-color: #fffbeb;
+}
+.rose:hover {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+.hibiscus:hover {
+  border-color: #0d6efd;
+  background-color: #f0f7ff;
+}
 
 .recruit-card {
   background-color: white;
