@@ -1,0 +1,58 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.gallery-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .gallery-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.gallery-caption {
+  padding: 16px;
+  text-align: center;
+}
+
+.gallery-caption h5 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.gallery-caption p {
+  color: #f8a609;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
