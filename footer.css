@@ -13,10 +13,9 @@ footer {
   letter-spacing: -0.025em;
   margin-bottom: 20px;
 }
-.footer-first-line a,
-span {
-  text-decoration: none;
-  color: #555555;
+.footer-first-line a, .footer-first-line span {
+    text-decoration: none;
+    color: #555555;
 }
 .footer-first-line a:hover {
   text-decoration: underline;
