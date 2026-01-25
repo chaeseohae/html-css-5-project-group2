@@ -12,6 +12,8 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 150px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
 }
 .teacher {
     display: flex;
@@ -35,9 +37,16 @@ body {
 .card {
     border: none;
     margin: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 .card-text {
     text-align: center;
+    font-size: 15px;
+    letter-spacing: -0.05em;
+    line-height: 1.6em;
+    word-spacing: 0.1em;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 48rem) {
