@@ -3,40 +3,6 @@
   padding-bottom: 80px;
 }
 
-.top-menu {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo-area h5 {
-  font-size: 1.3rem;
-  color: #333;
-}
-
-.top-menu-right {
-  display: flex;
-  align-items: center;
-}
-
-.top-menu-right a:hover {
-  color: #f8a609 !important;
-  transition: color 0.3s ease;
-}
-
-.navbar-custom {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.nav-link-custom {
-  font-size: 1rem;
-  transition: opacity 0.3s ease;
-  position: relative;
-}
-
-.nav-link-custom:hover {
-  opacity: 0.8;
-  text-decoration: underline !important;
-}
-
 .carousel-item img {
   width: 100%;
   height: auto;

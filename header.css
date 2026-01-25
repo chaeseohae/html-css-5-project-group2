@@ -1,10 +1,11 @@
-.top-menu {
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
-
 .logo-area h5 {
   font-size: 1.3rem;
   color: #333;
+}
+
+.logo-img {
+  height: 1.3125rem;
+  object-fit: contain;
 }
 
 .top-menu-right {
@@ -23,14 +24,11 @@
 
 .nav-link-custom {
   font-size: 1rem;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
+  text-decoration: none;
 }
 
 .nav-link-custom:hover {
-  opacity: 0.8;
+  color: #51cc64 !important;
 }
-
-/* .nav-link-custom:hover {
-  text-decoration: none !important;
-} */
