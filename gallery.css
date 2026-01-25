@@ -59,3 +59,20 @@ body {
   font-style: italic;
   margin: 0;
 }
+
+.main-body-section {
+  background-color: #bff9e4;
+  padding-bottom: 80px;
+}
+
+.main-body-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width: 991.98px) {
+  .main-body-section .container {
+    padding: 20px 15px;
+  }
+}

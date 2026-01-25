@@ -24,15 +24,28 @@
         <div
           class="container d-flex justify-content-between align-items-center"
         >
-          <div class="logo-area">
+          <div
+            class="logo-area d-flex align-items-center justify-content-between w-100"
+          >
             <a href="/" class="text-decoration-none text-dark">
               <h5 class="mb-0 fw-bold">떡잎 유치원</h5>
             </a>
+            <button
+              class="navbar-toggler d-lg-none ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
 
           <div
-            class="top-menu-right d-flex align-items-center"
-            style="gap: 2.5rem"
+            class="top-menu-right d-none d-lg-flex align-items-center"
+            style="gap: 1.5rem; margin-left: auto"
           >
             <a href="/" class="text-decoration-none text-dark small">홈</a>
             <a href="login.html" class="text-decoration-none text-dark small"
@@ -47,33 +60,37 @@
 
       <!-- nav-bar -->
       <nav class="navbar-custom">
-        <div class="container">
-          <div class="d-flex justify-content-around gap-5 py-3">
-            <a
-              href="info.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >유치원 소개</a
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div
+              class="navbar-nav w-100 d-lg-flex justify-content-around gap-5 py-3"
             >
-            <a
-              href="classStory.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >우리반 이야기</a
-            >
-            <a
-              href="gallery.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >갤러리</a
-            >
-            <a
-              href="meal.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >식단</a
-            >
-            <a
-              href="notice.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >가정통신문</a
-            >
+              <a
+                href="info.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >유치원 소개</a
+              >
+              <a
+                href="classStory.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >우리반 이야기</a
+              >
+              <a
+                href="gallery.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >갤러리</a
+              >
+              <a
+                href="meal.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >식단</a
+              >
+              <a
+                href="notice.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >가정통신문</a
+              >
+            </div>
           </div>
         </div>
       </nav>
@@ -98,104 +115,106 @@
         </h1>
       </div>
 
-      <div class="gallery-grid mt-4 px-4">
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene12.png" alt="갤러리 이미지 6" />
+      <div class="container">
+        <div class="gallery-grid mt-4 px-4">
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene12.png" alt="갤러리 이미지 6" />
+            </div>
+            <div class="gallery-caption">
+              <h5>두목님이 닭장에 갇혔어요!</h5>
+              <p>무슨일이 일어난 걸까요?</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>두목님이 닭장에 갇혔어요!</h5>
-            <p>무슨일이 일어난 걸까요?</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene13.png" alt="갤러리 이미지 6" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene13.png" alt="갤러리 이미지 6" />
+            </div>
+            <div class="gallery-caption">
+              <h5>로드 FC</h5>
+              <p>달걀을 뺏으려는자와 뺏기지 않으려는자!</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>로드 FC</h5>
-            <p>달걀을 뺏으려는자와 뺏기지 않으려는자!</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene4.png" alt="갤러리 이미지 3" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene4.png" alt="갤러리 이미지 3" />
+            </div>
+            <div class="gallery-caption">
+              <h5>외부인 방문기</h5>
+              <p>반가운 죽순괴물이 찾아왔네요!</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>외부인 방문기</h5>
-            <p>반가운 죽순괴물이 찾아왔네요!</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene2.png" alt="갤러리 이미지 1" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene2.png" alt="갤러리 이미지 1" />
+            </div>
+            <div class="gallery-caption">
+              <h5>철수와 짱구가 선의의 경쟁을 하네요</h5>
+              <p>오늘도 평화로운 떡잎유치원</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>철수와 짱구가 선의의 경쟁을 하네요</h5>
-            <p>오늘도 평화로운 떡잎유치원</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene9.png" alt="갤러리 이미지 6" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene9.png" alt="갤러리 이미지 6" />
+            </div>
+            <div class="gallery-caption">
+              <h5>짱구네 집 방문기</h5>
+              <p>공공칠빵 이라도 하는걸까요??</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>짱구네 집 방문기</h5>
-            <p>공공칠빵 이라도 하는걸까요??</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene3.png" alt="갤러리 이미지 2" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene3.png" alt="갤러리 이미지 2" />
+            </div>
+            <div class="gallery-caption">
+              <h5>외줄타기</h5>
+              <p>짱구는 행복해 보이네요!</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>외줄타기</h5>
-            <p>짱구는 행복해 보이네요!</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene5-low.png" alt="갤러리 이미지 4" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene5-low.png" alt="갤러리 이미지 4" />
+            </div>
+            <div class="gallery-caption">
+              <h5>단체로 예방접종을 맞아요!</h5>
+              <p>떡잎 유치원 어린이들은 주사맞는 것을 두려워하지 않는답니다!</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>단체로 예방접종을 맞아요!</h5>
-            <p>떡잎 유치원 어린이들은 주사맞는 것을 두려워하지 않는답니다!</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene6.png" alt="갤러리 이미지 5" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene6.png" alt="갤러리 이미지 5" />
+            </div>
+            <div class="gallery-caption">
+              <h5>만들기 시간</h5>
+              <p>다 함께 종이비행기를 만들어 보아요</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>만들기 시간</h5>
-            <p>다 함께 종이비행기를 만들어 보아요</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene7.png" alt="갤러리 이미지 6" />
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene7.png" alt="갤러리 이미지 6" />
+            </div>
+            <div class="gallery-caption">
+              <h5>종이 비행기 시승기</h5>
+              <p>종이비행기는 수리가 필요해 보여요!</p>
+            </div>
           </div>
-          <div class="gallery-caption">
-            <h5>종이 비행기 시승기</h5>
-            <p>종이비행기는 수리가 필요해 보여요!</p>
-          </div>
-        </div>
 
-        <div class="gallery-card">
-          <div class="gallery-img-wrapper">
-            <img src="/images/gallery/scene8.png" alt="갤러리 이미지 6" />
-          </div>
-          <div class="gallery-caption">
-            <h5>단정한 정리 정돈</h5>
-            <p>재앙 직후의 교실 모습</p>
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <img src="/images/gallery/scene8.png" alt="갤러리 이미지 6" />
+            </div>
+            <div class="gallery-caption">
+              <h5>단정한 정리 정돈</h5>
+              <p>재앙 직후의 교실 모습</p>
+            </div>
           </div>
         </div>
       </div>
@@ -226,9 +245,7 @@
         <div class="footer-second-line-left col-md-6">
           <div>(00000) 떡잎시 떡잎구 떡잎마을20번길 15</div>
           <div>TEL.교무실:000-123-4567</div>
-          <div>
-            Copyright© Yoshito Usui / Futabasha. All Rights Reserved.
-          </div>
+          <div>Copyright© Yoshito Usui / Futabasha. All Rights Reserved.</div>
         </div>
         <div class="footer-second-line-right">
           <div>Today 34명</div>

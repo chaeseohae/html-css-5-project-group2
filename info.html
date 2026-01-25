@@ -22,15 +22,35 @@
         <div
           class="container d-flex justify-content-between align-items-center"
         >
-          <div class="logo-area">
-            <a href="/" class="text-decoration-none text-dark">
-              <h5 class="mb-0 fw-bold">떡잎 유치원</h5>
+          <div
+            class="logo-area d-flex align-items-center justify-content-between w-100"
+          >
+            <a
+              href="/"
+              class="text-decoration-none text-dark d-flex align-items-center"
+            >
+              <img
+                src="/images/logo.png"
+                alt="떡잎 유치원 로고"
+                class="logo-img me-2"
+              />
             </a>
+            <button
+              class="navbar-toggler d-lg-none ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
 
           <div
-            class="top-menu-right d-flex align-items-center"
-            style="gap: 2.5rem"
+            class="top-menu-right d-none d-lg-flex align-items-center"
+            style="gap: 1.5rem; margin-left: auto"
           >
             <a href="/" class="text-decoration-none text-dark small">홈</a>
             <a href="login.html" class="text-decoration-none text-dark small"
@@ -45,33 +65,37 @@
 
       <!-- nav-bar -->
       <nav class="navbar-custom">
-        <div class="container">
-          <div class="d-flex justify-content-around gap-5 py-3">
-            <a
-              href="info.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >유치원 소개</a
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div
+              class="navbar-nav w-100 d-lg-flex justify-content-around gap-5 py-3"
             >
-            <a
-              href="classStory.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >우리반 이야기</a
-            >
-            <a
-              href="gallery.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >갤러리</a
-            >
-            <a
-              href="meal.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >식단</a
-            >
-            <a
-              href="notice.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >가정통신문</a
-            >
+              <a
+                href="info.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >유치원 소개</a
+              >
+              <a
+                href="classStory.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >우리반 이야기</a
+              >
+              <a
+                href="gallery.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >갤러리</a
+              >
+              <a
+                href="meal.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >식단</a
+              >
+              <a
+                href="notice.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >가정통신문</a
+              >
+            </div>
           </div>
         </div>
       </nav>
@@ -96,98 +120,273 @@
         </h1>
       </div>
 
-      <div class="container py-5">
-        <div class="bg-white p-4 shadow-sm" style="border-radius: 20px">
-          <div class="mb-4 border-bottom pb-3">
-            <h3 class="fw-bold" style="color: black">가정통신문</h3>
-            <p class="text-muted small">떡잎유치원의 소식을 전달해 드립니다.</p>
-          </div>
-
-          <div class="table-responsive">
-            <table
-              class="table table-hover"
-              style="border-top: 2px solid black"
-            >
-              <thead class="table-light">
-                <tr class="text-center">
-                  <th style="width: 8%">번호</th>
-                  <th style="width: 60%">제목</th>
-                  <th style="width: 12%">작성자</th>
-                  <th style="width: 12%">작성일</th>
-                  <th style="width: 8%">조회</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="text-center">
-                  <td>4</td>
-                  <td class="text-start ps-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                      <strong>[안내]</strong> 학부모 소통의 날 안내문
-                    </a>
-                  </td>
-                  <td>관리자</td>
-                  <td>2026-01-22</td>
-                  <td>92</td>
-                </tr>
-                <tr class="text-center">
-                  <td>3</td>
-                  <td class="text-start ps-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                      <strong>[공지]</strong> 2026학년도 신입생 오리엔테이션
-                      안내
-                    </a>
-                  </td>
-                  <td>관리자</td>
-                  <td>2026-01-21</td>
-                  <td>125</td>
-                </tr>
-
-                <tr class="text-center">
-                  <td>2</td>
-                  <td class="text-start ps-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                      2월 식단표 및 영양 소식지입니다.
-                    </a>
-                  </td>
-                  <td>관리자</td>
-                  <td>2026-01-20</td>
-                  <td>89</td>
-                </tr>
-
-                <tr class="text-center">
-                  <td>1</td>
-                  <td class="text-start ps-4">
-                    <a href="#" class="text-decoration-none text-dark">
-                      <strong>[안내]</strong> 겨울방학 중 돌봄교실 운영 안내</a
-                    >
-                  </td>
-                  <td>관리자</td>
-                  <td>2026-01-15</td>
-                  <td>210</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="d-flex justify-content-center mt-4">
-            <div class="input-group mb-3" style="max-width: 400px">
-              <select
-                class="form-select form-select-sm"
-                style="max-width: 100px"
-              >
-                <option selected>제목</option>
-                <option value="1">내용</option>
-              </select>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                placeholder="검색어를 입력하세요"
-              />
-              <button class="btn btn-outline-secondary btn-sm" type="button">
-                검색
-              </button>
-            </div>
-          </div>
+      <div class="container menu">
+        <h1 class="month">이달의 식단표</h1>
+        <div class="table-container">
+          <table>
+            <tr class="table-tr" style="border-bottom: 1px solid black">
+              <td colspan="6" class="table-title">1월 식단표</td>
+            </tr>
+            <tr class="table-tr">
+              <td class="table-line">
+                <div class="week-item">
+                  <span class="week-item-left">주</span>
+                  <span class="week-item-right">요일</span>
+                </div>
+              </td>
+              <th class="day">월</th>
+              <th class="day">화</th>
+              <th class="day">수</th>
+              <th class="day">목</th>
+              <th class="day">금</th>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>1주</th>
+              <td rowspan="3" colspan="3" class="img-container">
+                <img src="images/winter2.jpeg" />
+              </td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쌀밥<br />
+                콩나물국<br />
+                안매운닭갈비<br />
+                고사리나물<br />
+                김치
+              </td>
+              <td>
+                잡곡밥<br />
+                양배추된장국<br />
+                돈육양념구이<br />
+                감자우유조림<br />
+                깍두기
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th class="border-item">간식</th>
+              <td>유부주먹밥</td>
+              <td>짜장면</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>2주</th>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                닭살채소덮밥<br />
+                유부장국<br />
+                삼치데리야끼조림<br />
+                김구이<br />
+                김치
+              </td>
+              <td>
+                흑미밥<br />
+                숙주된장국<br />
+                메추리알장조림<br />
+                청경채나물<br />
+                깍두기
+              </td>
+              <td>
+                수수밥<br />
+                감자양파국<br />
+                고등어구이<br />
+                콩나물무침<br />
+                김치
+              </td>
+              <td>
+                보리밥<br />
+                팽이버섯국<br />
+                두부완자케첩조림<br />
+                가지볶음<br />
+                깍두기
+              </td>
+              <td>
+                현미밥<br />
+                배추된장국<br />
+                치킨너겟/소스<br />
+                김자반<br />
+                오이피클
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>잼샌드위치</td>
+              <td>궁중떡볶이</td>
+              <td>씨리얼/우유</td>
+              <td>알록달록주먹밥</td>
+              <td>찐감자/보리차</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>3주</th>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                서리태밥<br />
+                맑은두부국<br />
+                명란달걀찜<br />
+                크랜베리잔멸치볶음<br />
+                깍두기
+              </td>
+              <td>
+                쌀밥<br />
+                미역국<br />
+                간장소불고기<br />
+                시금치무침<br />
+                김치
+              </td>
+              <td>
+                짜장밥<br />
+                물만두장국<br />
+                돼지고기야채볶음<br />
+                제철과일<br />
+                김치
+              </td>
+              <td>
+                쌀밥<br />
+                쇠고기미역국<br />
+                훈제오리/소스<br />
+                새송이버섯볶음<br />
+                김치
+              </td>
+              <td>
+                기장밥<br />
+                소고기무국<br />
+                한입돈까스/소스<br />
+                과일샐러드<br />
+                김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>김치볶음밥</td>
+              <td>핫도그</td>
+              <td>떡국</td>
+              <td>유부주먹밥</td>
+              <td>김치전</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>4주</th>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쌀밥<br />
+                얼갈이국<br />
+                함박스테이크/소스<br />
+                들깨무나물볶음<br />
+                깍두기
+              </td>
+              <td>
+                잡곡밥<br />
+                어묵양파국<br />
+                순살닭강정/소스<br />
+                김자반<br />
+                백김치
+              </td>
+              <td>
+                기장밥<br />
+                콩나물국<br />
+                간장마파두부<br />
+                오징어오이무침<br />
+                배추김치
+              </td>
+              <td>
+                하이라이스<br />
+                계란실파국<br />
+                닭고기버섯조림<br />
+                감자샐러드<br />
+                김치
+              </td>
+              <td>
+                차조밥<br />
+                느타리배추장국<br />
+                제육볶음<br />
+                상추무침<br />
+                김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>멸치국수</td>
+              <td>꿀호떡</td>
+              <td>미트소스스파게티</td>
+              <td>찐빵/주스</td>
+              <td>삶은계란</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>5주</th>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쇠고기콩나물밥<br />
+                애호박새우젓국<br />
+                김자반<br />
+                마카로니샐러드<br />
+                김치
+              </td>
+              <td>
+                쌀밥<br />
+                북어국<br />
+                파프리카잡채<br />
+                메추리알장조림<br />
+                백김치
+              </td>
+              <td>
+                잡곡밥<br />
+                어린이육개장<br />
+                소불고기떡볶음<br />
+                양배추샐러드<br />
+                김치
+              </td>
+              <td>
+                수수밥<br />
+                바지락순두부국<br />
+                참치전<br />
+                숙주나물<br />
+                김치
+              </td>
+              <td>
+                크림스파게티<br />
+                쇠고기스프<br />
+                단호박샐러드<br />
+                제철과일<br />
+                백김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>물만두</td>
+              <td>어묵탕</td>
+              <td>오징어링</td>
+              <td>핫도그</td>
+              <td>시리얼/우유</td>
+            </tr>
+          </table>
         </div>
       </div>
     </main>
@@ -217,9 +416,7 @@
         <div class="footer-second-line-left col-md-6">
           <div>(00000) 떡잎시 떡잎구 떡잎마을20번길 15</div>
           <div>TEL.교무실:000-123-4567</div>
-          <div>
-            Copyright© Yoshito Usui / Futabasha. All Rights Reserved.
-          </div>
+          <div>Copyright© Yoshito Usui / Futabasha. All Rights Reserved.</div>
         </div>
         <div class="footer-second-line-right">
           <div>Today 34명</div>
