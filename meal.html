@@ -1,35 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="meal.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="cursor.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
       <!-- top-menu -->
       <div class="top-menu bg-white py-3 border-bottom">
         <div
           class="container d-flex justify-content-between align-items-center"
         >
-          <div class="logo-area">
-            <a href="/" class="text-decoration-none text-dark">
-              <h5 class="mb-0 fw-bold">떡잎 유치원</h5>
+          <div
+            class="logo-area d-flex align-items-center justify-content-between w-100"
+          >
+            <a
+              href="/"
+              class="text-decoration-none text-dark d-flex align-items-center"
+            >
+              <img
+                src="/images/logo.png"
+                alt="떡잎 유치원 로고"
+                class="logo-img me-2"
+              />
             </a>
+            <button
+              class="navbar-toggler d-lg-none ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
 
           <div
-            class="top-menu-right d-flex align-items-center"
-            style="gap: 2.5rem"
+            class="top-menu-right d-none d-lg-flex align-items-center"
+            style="gap: 1.5rem; margin-left: auto"
           >
             <a href="/" class="text-decoration-none text-dark small">홈</a>
             <a href="login.html" class="text-decoration-none text-dark small"
@@ -44,356 +72,370 @@
 
       <!-- nav-bar -->
       <nav class="navbar-custom">
-        <div class="container">
-          <div class="d-flex justify-content-around gap-5 py-3">
-            <a
-              href="info.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >유치원 소개</a
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div
+              class="navbar-nav w-100 d-lg-flex justify-content-around gap-5 py-3"
             >
-            <a
-              href="classStory.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >우리반 이야기</a
-            >
-            <a
-              href="gallery.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >갤러리</a
-            >
-            <a
-              href="meal.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >식단</a
-            >
-            <a
-              href="notice.html"
-              class="nav-link-custom text-white text-decoration-none fw-bold"
-              >가정통신문</a
-            >
+              <a
+                href="info.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >유치원 소개</a
+              >
+              <a
+                href="classStory.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >우리반 이야기</a
+              >
+              <a
+                href="gallery.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >갤러리</a
+              >
+              <a
+                href="meal.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >식단</a
+              >
+              <a
+                href="notice.html"
+                class="nav-link-custom text-white text-decoration-none fw-bold"
+                >가정통신문</a
+              >
+            </div>
           </div>
         </div>
       </nav>
     </header>
-    
-    <main class="main-body-section">
-        <div class="position-relative text-center d-flex align-items-center justify-content-center" style="height: 300px; overflow: hidden;">
-            <img src="https://cso-studio-kr.dn.nexoncdn.co.kr/images/01510306014199001001.vmg" class="position-absolute w-100 h-100 object-fit-cover" alt="">
-            <div class="position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.4);"></div> 
-            <h1 class="display-4 fw-bold text-white z-1">🌱꿈과 사랑이 가득한 떡잎 유치원🌱</h1>
-        </div>
 
-        <div class="container menu">
-            <h1 class="month">이달의 식단표</h1>
-            <div class="table-container">
-                <table>
-                    <tr class="table-tr" style="border-bottom: 1px solid black;">
-                        <td colspan="6" class="table-title">1월 식단표</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <td class="table-line">
-                            <div class="week-item">
-                                <span class="week-item-left">주</span>
-                                <span class="week-item-right">요일</span>
-                            </div>
-                        </td>
-                        <th class="day">월</th>
-                        <th class="day">화</th>
-                        <th class="day">수</th>
-                        <th class="day">목</th>
-                        <th class="day">금</th>
-                    </tr>
-                    <tr class="table-tr color border-item">
-                        <th>1주</th>
-                        <td rowspan="3" colspan="3" class="img-container">
-                            <img src="images/winter2.jpeg">
-                        </td>
-                        <td>1</td>
-                        <td>2</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <th class="border-item">중식</th>
-                        <td>
-                            쌀밥<br>
-                            콩나물국<br>
-                            안매운닭갈비<br>
-                            고사리나물<br>
-                            김치
-                        </td>
-                        <td>
-                            잡곡밥<br>
-                            양배추된장국<br>
-                            돈육양념구이<br>
-                            감자우유조림<br>
-                            깍두기
-                        </td>
-                    </tr>
-                    <tr class="table-tr border-item">
-                        <th class="border-item">간식</th>
-                        <td>유부주먹밥</td>
-                        <td>짜장면</td>
-                    </tr>
-                    <tr class="table-tr color border-item">
-                        <th>2주</th>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <th class="border-item">중식</th>
-                        <td>
-                            닭살채소덮밥<br>
-                            유부장국<br>
-                            삼치데리야끼조림<br>
-                            김구이<br>
-                            김치
-                        </td>
-                        <td>
-                            흑미밥<br>
-                            숙주된장국<br>
-                            메추리알장조림<br>
-                            청경채나물<br>
-                            깍두기
-                        </td>
-                        <td>
-                            수수밥<br>
-                            감자양파국<br>
-                            고등어구이<br>
-                            콩나물무침<br>
-                            김치
-                        </td>
-                        <td>
-                            보리밥<br>
-                            팽이버섯국<br>
-                            두부완자케첩조림<br>
-                            가지볶음<br>
-                            깍두기
-                        </td>
-                        <td>
-                            현미밥<br>
-                            배추된장국<br>
-                            치킨너겟/소스<br>
-                            김자반<br>
-                            오이피클
-                        </td>
-                    </tr>
-                    <tr class="table-tr border-item">
-                        <th>간식</th>
-                        <td>잼샌드위치</td>
-                        <td>궁중떡볶이</td>
-                        <td>씨리얼/우유</td>
-                        <td>알록달록주먹밥</td>
-                        <td>찐감자/보리차</td>
-                    </tr>
-                    <tr class="table-tr color border-item">
-                        <th>3주</th>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <th class="border-item">중식</th>
-                        <td>
-                            서리태밥<br>
-                            맑은두부국<br>
-                            명란달걀찜<br>
-                            크랜베리잔멸치볶음<br>
-                            깍두기
-                        </td>
-                        <td>
-                            쌀밥<br>
-                            미역국<br>
-                            간장소불고기<br>
-                            시금치무침<br>
-                            김치
-                        </td>
-                        <td>
-                            짜장밥<br>
-                            물만두장국<br>
-                            돼지고기야채볶음<br>
-                            제철과일<br>
-                            김치
-                        </td>
-                        <td>
-                            쌀밥<br>
-                            쇠고기미역국<br>
-                            훈제오리/소스<br>
-                            새송이버섯볶음<br>
-                            김치
-                        </td>
-                        <td>
-                            기장밥<br>
-                            소고기무국<br>
-                            한입돈까스/소스<br>
-                            과일샐러드<br>
-                            김치
-                        </td>
-                    </tr>
-                    <tr class="table-tr border-item">
-                        <th>간식</th>
-                        <td>김치볶음밥</td>
-                        <td>핫도그</td>
-                        <td>떡국</td>
-                        <td>유부주먹밥</td>
-                        <td>김치전</td>
-                    </tr>
-                    <tr class="table-tr color border-item">
-                        <th>4주</th>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                        <td>22</td>
-                        <td>23</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <th class="border-item">중식</th>
-                        <td>
-                            쌀밥<br>
-                            얼갈이국<br>
-                            함박스테이크/소스<br>
-                            들깨무나물볶음<br>
-                            깍두기
-                        </td>
-                        <td>
-                            잡곡밥<br>
-                            어묵양파국<br>
-                            순살닭강정/소스<br>
-                            김자반<br>
-                            백김치
-                        </td>
-                        <td>
-                            기장밥<br>
-                            콩나물국<br>
-                            간장마파두부<br>
-                            오징어오이무침<br>
-                            배추김치
-                        </td>
-                        <td>
-                            하이라이스<br>
-                            계란실파국<br>
-                            닭고기버섯조림<br>
-                            감자샐러드<br>
-                            김치
-                        </td>
-                        <td>
-                            차조밥<br>
-                            느타리배추장국<br>
-                            제육볶음<br>
-                            상추무침<br>
-                            김치
-                        </td>
-                    </tr>
-                    <tr class="table-tr border-item">
-                        <th>간식</th>
-                        <td>멸치국수</td>
-                        <td>꿀호떡</td>
-                        <td>미트소스스파게티</td>
-                        <td>찐빵/주스</td>
-                        <td>삶은계란</td>
-                    </tr>
-                    <tr class="table-tr color border-item">
-                        <th>5주</th>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                        <td>29</td>
-                        <td>30</td>
-                    </tr>
-                    <tr class="table-tr">
-                        <th class="border-item">중식</th>
-                        <td>
-                            쇠고기콩나물밥<br>
-                            애호박새우젓국<br>
-                            김자반<br>
-                            마카로니샐러드<br>
-                            김치
-                        </td>
-                        <td>
-                            쌀밥<br>
-                            북어국<br>
-                            파프리카잡채<br>
-                            메추리알장조림<br>
-                            백김치
-                        </td>
-                        <td>
-                            잡곡밥<br>
-                            어린이육개장<br>
-                            소불고기떡볶음<br>
-                            양배추샐러드<br>
-                            김치
-                        </td>
-                        <td>
-                            수수밥<br>
-                            바지락순두부국<br>
-                            참치전<br>
-                            숙주나물<br>
-                            김치
-                        </td>
-                        <td>
-                            크림스파게티<br>
-                            쇠고기스프<br>
-                            단호박샐러드<br>
-                            제철과일<br>
-                            백김치
-                        </td>
-                    </tr>
-                    <tr class="table-tr border-item">
-                        <th>간식</th>
-                        <td>물만두</td>
-                        <td>어묵탕</td>
-                        <td>오징어링</td>
-                        <td>핫도그</td>
-                        <td>시리얼/우유</td>
-                    </tr>
-                    
-                </table>
-            </div>
+    <main class="main-body-section">
+      <div
+        class="position-relative text-center d-flex align-items-center justify-content-center"
+        style="height: 300px; overflow: hidden"
+      >
+        <img
+          src="https://cso-studio-kr.dn.nexoncdn.co.kr/images/01510306014199001001.vmg"
+          class="position-absolute w-100 h-100 object-fit-cover"
+          alt=""
+        />
+        <div
+          class="position-absolute w-100 h-100"
+          style="background: rgba(0, 0, 0, 0.4)"
+        ></div>
+        <h1 class="display-4 fw-bold text-white z-1">
+          🌱꿈과 사랑이 가득한 떡잎 유치원🌱
+        </h1>
+      </div>
+
+      <div class="container menu">
+        <h1 class="month">이달의 식단표</h1>
+        <div class="table-container">
+          <table>
+            <tr class="table-tr" style="border-bottom: 1px solid black">
+              <td colspan="6" class="table-title">1월 식단표</td>
+            </tr>
+            <tr class="table-tr">
+              <td class="table-line">
+                <div class="week-item">
+                  <span class="week-item-left">주</span>
+                  <span class="week-item-right">요일</span>
+                </div>
+              </td>
+              <th class="day">월</th>
+              <th class="day">화</th>
+              <th class="day">수</th>
+              <th class="day">목</th>
+              <th class="day">금</th>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>1주</th>
+              <td rowspan="3" colspan="3" class="img-container">
+                <img src="images/winter2.jpeg" />
+              </td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쌀밥<br />
+                콩나물국<br />
+                안매운닭갈비<br />
+                고사리나물<br />
+                김치
+              </td>
+              <td>
+                잡곡밥<br />
+                양배추된장국<br />
+                돈육양념구이<br />
+                감자우유조림<br />
+                깍두기
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th class="border-item">간식</th>
+              <td>유부주먹밥</td>
+              <td>짜장면</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>2주</th>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                닭살채소덮밥<br />
+                유부장국<br />
+                삼치데리야끼조림<br />
+                김구이<br />
+                김치
+              </td>
+              <td>
+                흑미밥<br />
+                숙주된장국<br />
+                메추리알장조림<br />
+                청경채나물<br />
+                깍두기
+              </td>
+              <td>
+                수수밥<br />
+                감자양파국<br />
+                고등어구이<br />
+                콩나물무침<br />
+                김치
+              </td>
+              <td>
+                보리밥<br />
+                팽이버섯국<br />
+                두부완자케첩조림<br />
+                가지볶음<br />
+                깍두기
+              </td>
+              <td>
+                현미밥<br />
+                배추된장국<br />
+                치킨너겟/소스<br />
+                김자반<br />
+                오이피클
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>잼샌드위치</td>
+              <td>궁중떡볶이</td>
+              <td>씨리얼/우유</td>
+              <td>알록달록주먹밥</td>
+              <td>찐감자/보리차</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>3주</th>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                서리태밥<br />
+                맑은두부국<br />
+                명란달걀찜<br />
+                크랜베리잔멸치볶음<br />
+                깍두기
+              </td>
+              <td>
+                쌀밥<br />
+                미역국<br />
+                간장소불고기<br />
+                시금치무침<br />
+                김치
+              </td>
+              <td>
+                짜장밥<br />
+                물만두장국<br />
+                돼지고기야채볶음<br />
+                제철과일<br />
+                김치
+              </td>
+              <td>
+                쌀밥<br />
+                쇠고기미역국<br />
+                훈제오리/소스<br />
+                새송이버섯볶음<br />
+                김치
+              </td>
+              <td>
+                기장밥<br />
+                소고기무국<br />
+                한입돈까스/소스<br />
+                과일샐러드<br />
+                김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>김치볶음밥</td>
+              <td>핫도그</td>
+              <td>떡국</td>
+              <td>유부주먹밥</td>
+              <td>김치전</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>4주</th>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쌀밥<br />
+                얼갈이국<br />
+                함박스테이크/소스<br />
+                들깨무나물볶음<br />
+                깍두기
+              </td>
+              <td>
+                잡곡밥<br />
+                어묵양파국<br />
+                순살닭강정/소스<br />
+                김자반<br />
+                백김치
+              </td>
+              <td>
+                기장밥<br />
+                콩나물국<br />
+                간장마파두부<br />
+                오징어오이무침<br />
+                배추김치
+              </td>
+              <td>
+                하이라이스<br />
+                계란실파국<br />
+                닭고기버섯조림<br />
+                감자샐러드<br />
+                김치
+              </td>
+              <td>
+                차조밥<br />
+                느타리배추장국<br />
+                제육볶음<br />
+                상추무침<br />
+                김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>멸치국수</td>
+              <td>꿀호떡</td>
+              <td>미트소스스파게티</td>
+              <td>찐빵/주스</td>
+              <td>삶은계란</td>
+            </tr>
+            <tr class="table-tr color border-item">
+              <th>5주</th>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              <td>29</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-tr">
+              <th class="border-item">중식</th>
+              <td>
+                쇠고기콩나물밥<br />
+                애호박새우젓국<br />
+                김자반<br />
+                마카로니샐러드<br />
+                김치
+              </td>
+              <td>
+                쌀밥<br />
+                북어국<br />
+                파프리카잡채<br />
+                메추리알장조림<br />
+                백김치
+              </td>
+              <td>
+                잡곡밥<br />
+                어린이육개장<br />
+                소불고기떡볶음<br />
+                양배추샐러드<br />
+                김치
+              </td>
+              <td>
+                수수밥<br />
+                바지락순두부국<br />
+                참치전<br />
+                숙주나물<br />
+                김치
+              </td>
+              <td>
+                크림스파게티<br />
+                쇠고기스프<br />
+                단호박샐러드<br />
+                제철과일<br />
+                백김치
+              </td>
+            </tr>
+            <tr class="table-tr border-item">
+              <th>간식</th>
+              <td>물만두</td>
+              <td>어묵탕</td>
+              <td>오징어링</td>
+              <td>핫도그</td>
+              <td>시리얼/우유</td>
+            </tr>
+          </table>
         </div>
+      </div>
     </main>
 
     <footer class="container">
-        <div class="footer-first-line">
-            <div class="footer-first-line-left col-md-6">
-                <a href="#">개인정보처리방침</a>
-                <span>|</span>
-                <a href="#">저작권보호정책</a>
-                <span>|</span>
-                <a href="#">이용약관</a>
-                <span>|</span>
-                <a href="#">이메일무단수집거부</a>
-                <span>|</span>
-                <a href="#">사이트맵</a>
-            </div>
-            <div class="footer-first-line-right">
-                <a href="#">지원서비스</a>
-                <span>|</span>
-                <a href="#">원격서비스</a>
-                <span>|</span>
-                <a href="#">통합누리집운영기관</a>
-            </div>
+      <div class="footer-first-line">
+        <div class="footer-first-line-left col-md-6">
+          <a href="#">개인정보처리방침</a>
+          <span>|</span>
+          <a href="#">저작권보호정책</a>
+          <span>|</span>
+          <a href="#">이용약관</a>
+          <span>|</span>
+          <a href="#">이메일무단수집거부</a>
+          <span>|</span>
+          <a href="#">사이트맵</a>
         </div>
-        <div class="footer-second-line">
-            <div class="footer-second-line-left col-md-6">
-                <div>(00000) 떡잎시 떡잎구 떡잎마을20번길 15</div>
-                <div>TEL.교무실:000-123-4567</div>
-                <div>Copyright© Yoshito Usui / Futabasha. All Rights Reserved.</div>
-            </div>
-            <div class="footer-second-line-right">
-                <div>Today 34명</div>
-                <span>|</span>
-                <div>Total 50,194명</div>
-            </div>
-
+        <div class="footer-first-line-right">
+          <a href="#">지원서비스</a>
+          <span>|</span>
+          <a href="#">원격서비스</a>
+          <span>|</span>
+          <a href="#">통합누리집운영기관</a>
         </div>
+      </div>
+      <div class="footer-second-line">
+        <div class="footer-second-line-left col-md-6">
+          <div>(00000) 떡잎시 떡잎구 떡잎마을20번길 15</div>
+          <div>TEL.교무실:000-123-4567</div>
+          <div>Copyright© Yoshito Usui / Futabasha. All Rights Reserved.</div>
+        </div>
+        <div class="footer-second-line-right">
+          <div>Today 34명</div>
+          <span>|</span>
+          <div>Total 50,194명</div>
+        </div>
+      </div>
     </footer>
     <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-          crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>

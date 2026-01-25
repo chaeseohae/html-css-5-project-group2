@@ -3,6 +3,7 @@ body {
 }
 
 a:hover,
+span:hover,
 button:hover {
   cursor: url("./images/shinchan-hover-50.png"), auto;
 }
