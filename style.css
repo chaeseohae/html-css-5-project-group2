@@ -1,40 +1,6 @@
 .main-body-section {
-  background-color:#bff9e4;
+  background-color: #bff9e4;
   padding-bottom: 80px;
-}
-
-.top-menu {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo-area h5 {
-  font-size: 1.3rem;
-  color: #333;
-}
-
-.top-menu-right {
-  display: flex;
-  align-items: center;
-}
-
-.top-menu-right a:hover {
-  color: #f8a609 !important;
-  transition: color 0.3s ease;
-}
-
-.navbar-custom {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.nav-link-custom {
-  font-size: 1rem;
-  transition: opacity 0.3s ease;
-  position: relative;
-}
-
-.nav-link-custom:hover {
-  opacity: 0.8;
-  text-decoration: underline !important;
 }
 
 .carousel-item img {
@@ -108,47 +74,60 @@
   border-bottom: 1px dashed white;
   display: flex;
 }
-.news-list li span { color: #999; margin-right: 15px; font-size: 0.85rem; }
+.news-list li span {
+  color: #999;
+  margin-right: 15px;
+  font-size: 0.85rem;
+}
 
 .btn-class-logo {
-    text-decoration: none; 
-    border-radius: 15px;    
-    margin-bottom: 10px;   
-    transition: all 0.3s ease; 
-    display: flex;         
-    align-items: center;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
-
-.btn-class-logo.sunflower { background-color: #fff9db; }
-.btn-class-logo.rose      { background-color: #fff0f6; }
-.btn-class-logo.hibiscus  { background-color: #f3f0ff; }
-
+.btn-class-logo.sunflower {
+  background-color: #fff9db;
+}
+.btn-class-logo.rose {
+  background-color: #fff0f6;
+}
+.btn-class-logo.hibiscus {
+  background-color: #f3f0ff;
+}
 
 .btn-class-logo:hover {
-    transform: scale(1.03); 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.btn-class-logo.sunflower:hover { background-color: #ffec99 !important; }
-.btn-class-logo.rose:hover      { background-color: #ffdeeb !important; }
-.btn-class-logo.hibiscus:hover  { background-color: #e5dbff !important; }
-
+.btn-class-logo.sunflower:hover {
+  background-color: #ffec99 !important;
+}
+.btn-class-logo.rose:hover {
+  background-color: #ffdeeb !important;
+}
+.btn-class-logo.hibiscus:hover {
+  background-color: #e5dbff !important;
+}
 
 .logo-emoji {
-    font-size: 3rem;
-    width: 60px; height: 60px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    transition: transform 0.3s ease;
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .btn-class-logo:hover .logo-emoji {
-    transform: scale(1.2); 
-    display: inline-block;
+  transform: scale(1.2);
+  display: inline-block;
 }
-
 
 .recruit-card {
   background-color: white;

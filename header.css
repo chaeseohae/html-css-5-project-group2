@@ -1,0 +1,34 @@
+.logo-area h5 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.logo-img {
+  height: 1.3125rem;
+  object-fit: contain;
+}
+
+.top-menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu-right a:hover {
+  color: #f8a609 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom {
+  background-color: #f8a609;
+}
+
+.nav-link-custom {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  color: #51cc64 !important;
+}
